@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/modal-image.css">
+    <!-- jQuery library -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/aos.js"></script>
+    <script type="text/javascript" src="js/highlight.min.js"></script>
+    <script type="text/javascript" src="js/costum-page.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <title>Welcome to My Website</title>
+</head>
+<body>
+
+    <!-- Navbar section -->
+    <nav id="navbar-sec" class="navbar navbar-expand-md navbar-light bg-light">
+        <button class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#collapsibleNavbar" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="collapsibleNavbar" class="collapse navbar-collapse justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" onclick="alert('You are already in the HOME!')">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="directToSection('about-sec-head')">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="directToSection('portofolio-sec-head')">PORTOFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="directToSection('blog-sec-head')">BLOG</a></li>
+                <li class="nav-item"><a class="nav-link" onclick="directToSection('team-sec-head')">TEAM</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#contact-sec">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header section -->
+    <div id="header-sec" class="jumbotron jumbotron-fluid text-center">
+        <h1>Welcome to My Website Portofolio</h1>
+        <img class="rounded-circle" src="img/user/darwin.jpg">
+        <p>
+            Hello, my name is Darwin, you can call me Darwin. I am from Jakarta and Thankyou
+        </p>
+    </div>
+
+    <!-- About section -->
+    <div id="about-sec-head" class="container heading-box"><h2>About Me</h2></div>
+    <div id="about-sec" class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-12 col-lg-5 user-bio">
+                <img class="rounded-circle" src="img/user/darwin.jpg">
+                <div>
+                    <strong>Darwin Knowless</strong>
+                    <small>Back End Developer</small>
+                    <p>
+                        A man who can't be move
+                    </p>
+                    <div class="s-media">
+                        <strong>Follow me on:</strong>
+                        <a href="https://twitter.com/darwin_knowless" target="_blank"><i class="tw fa fa-twitter fa-2x"></i></a>
+                        <a href="https://www.instagram.com/darwin_knowless/" target="_blank"><i class="ig fa fa-instagram fa-2x"></i></a>
+                        <a href="https://github.com/darwinknowless" target="_blank"><i class="gh fa fa-github fa-2x"></i></a>
+                        <a href="https://www.linkedin.com/in/darwin-knowless/" target="_blank"><i class="ln fa fa-linkedin fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-7">
+                <div class="bio">
+                    <h5>Basic Info</h5>
+                    <span class="bio-label">Name</span><span class="bio-data">Darwin</span>
+                    <span class="bio-label">Date of Birth</span><span class="bio-data"> 29 Des 1989</span>
+                    <span class="bio-label">Place of Birth</span><span class="bio-data">Pontianak, West kalimantan</span>
+                    <span class="bio-label">Blood Type</span><span class="bio-data">B</span>
+                    <span class="bio-label">Education</span><span class="bio-data">Education, informatics Engineering</span>
+                    <span class="bio-label">Address</Address></span><span class="bio-data"> Ancol, North Jakarta</span>
+                    <h5>Skills</h5>
+                    <span class="bio-label">SQL, and NoSQL</span><span class="star-box"></span>
+                    <span class="bio-label">Javascript, Java, Golang</span><span class="star-box"></span>
+                    <span class="bio-label">Amazon S3 and EC2</span><span class="star-box"></span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="portofolio-sec-head" class="container heading-box"><h2>Portofolio</h2></div>
+    <div id="portofolio-sec" class="container" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-12">
+                <b>Select my portofolio</b>
+                <select>
+                    <option value="dw">Desktop Wallpaper</option>
+                    <option value="mw">Mobile Wallpaper</option>
+                    <option value="logo">Logo</option>
+                </select>
+
+                <div class="row portofolio-box dw">
+                    <div class="col-md-6"><img class="modal-target" src="img/portofolio/desktop_wallpaper/dw_1.jpg" alt="Avatar 1"></div>
+                    <div class="col-md-6"><img class="modal-target" src="img/portofolio/desktop_wallpaper/dw_2.jpg" alt="Avatar 2"></div>
+                </div>
+
+                <div class="row portofolio-box mw">
+                    <div class="col-6 col-md-3"><img class="modal-target" src="img/portofolio/mobile_wallpaper/mw_1.jpg" alt="A woman"></div>
+                </div>
+
+                <div class="row portofolio-box logo">
+                    <div class="col-6 col-md-3"><img class="modal-target" src="img/portofolio/logo/lg_1.jpg" alt="logo 1"></div>
+                    <div class="col-6 col-md-3"><img class="modal-target" src="img/portofolio/logo/lg_2.jpg" alt="logo 2"></div>
+                    <div class="col-6 col-md-3"><img class="modal-target" src="img/portofolio/logo/lg_3.jpg" alt="logo 3"></div>
+                    <div class="col-6 col-md-3"><img class="modal-target" src="img/portofolio/logo/lg_4.jpg" alt="logo 4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portofolio section -->
+    <div id="blog-sec-head" class="container heading-box"><h2>Blog</h2></div>
+    <div id="blog-sec" class="container" data-aos="fade-up">
+            <div class="row post">
+                <div class="col-3 col-sm-2 col-lg-1"><img src="img/user/darwin.jpg"></div>
+                <div class="col-9 col-sm-10 col-lg-11">
+                    <b>09/20/2021</b>
+                    <p>
+                        This is my first post in my website. I'm so happy to complete this course also
+                </div>
+            </div>
+            <div class="row post">
+                <div class="col-3 col-sm-2 col-lg-1"><img src="img/user/naruto.jpg"></div>
+                <div class="col-9 col-sm-10 col-lg-11">
+                    <b>09/23/2021</b>
+                    <p>
+                        I want to remake my web to be more simple and user friendly
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="team-sec-head" class="container heading-box"><h2>Team</h2></div>
+    <div id="team-sec" class="container" data-aos="fade-up">
+        <div class="row"> 
+            <div class="col-6 col-md-3">
+                <div class="user-team">
+                    <img class="rounded-circle mb-3" src="img//user/darwin.jpeg">
+                    <p>
+                        <strong>Darwin</strong>
+                        <br>
+                        <small>Back End Developer</small>   
+                    </p>  
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="user-team">
+                    <img class="rounded-circle mb-3" src="img//user/naruto.jpg">
+                    <p>
+                        <strong>Naruto</strong>
+                        <br>
+                        <small>Hokage Konoha</small>   
+                    </p>  
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="user-team">
+                    <img class="rounded-circle mb-3" src="img//user/sasuke.jpg">
+                    <p>
+                        <strong>Sasuke</strong>
+                        <br>
+                        <small>Hokage Kedua Konoha</small>   
+                    </p>  
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="user-team">
+                    <img class="rounded-circle mb-3" src="img/site/add_btn.png">
+                    <p>
+                        <strong>You</strong>
+                        <br>
+                        <small>Join now!</small>   
+                    </p>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact-sec" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Contact</h2>
+                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="POST">
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input class="form-control" type="email" placeholder="Type your email here">
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input class="form-control" type="email" placeholder="Type your subject here">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="form-control" placeholder="Type your message here" onfocus="adjustSize(this)" onblur="removeSize(this)"></textarea>
+                        </div>
+                        <input class="btn btn-primary btn-block" type="submit" value="Send">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Copyright section -->
+    <div class="copyright"><p>Copyright &copy; 2021</p></div>
+    
+    <!-- The image modal -->
+    <div id="modal-image" class="modal-image">
+        <span id="modal-close" class="modal-close">&times;</span>
+        <img id="modal-image-content" class="modal-image-content">
+        <div id="modal-caption" class="modal-caption"></div>
+    </div>
+
+    <a href="javascript:void(0);"onclick="directToSection('navbar-sec')" class="back-to-top"><i class="fa fa-arrow-up fa-2x"></i></a>
+
+    <!-- AOS library -->
+    <script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 2000
+        });
+    </script>
+
+    <script>
+        hljs.initHighlightingOnLoad();
+        $('.hero__scroll').on('click', function(e) {
+            $('html, body').animate({
+                scrollTop: $(window).height()
+            }, 1200);
+        });
+    </script>
+    <script>
+        var wd_star = 5;
+        var gd_star = 4;
+        var ve_star = 3;
+        var of_star = 4;
+        var indexStarBox;
+        var star;
+        var fullStar = 5;
+        var starBoxElem = document.querySelectorAll('.star-box');
+        var starBoxElemArr = Array.from(starBoxElem);
+        for (indexStarBox = 0; indexStarBox < 5; indexStarBox++) {
+            for (star = 0; star < fullStar; star++) {
+                var newI = document.createElement('i');
+                starBoxElemArr[indexStarBox].appendChild(newI);
+                newI.classList.add('fa', 'fa-star');
+                if (star < wd_star && indexStarBox == 0) {
+                        newI.setAttribute('style','color:#fdfd11');
+                    } else if (star < gd_star && indexStarBox == 1 )
+                    {
+                        newI.setAttribute('style','color:#fdfd11');
+                    } else if (star < ve_star && indexStarBox == 2 )
+                    {
+                        newI.setAttribute('style','color:#fdfd11');
+                    } else if (star < of_star && indexStarBox == 3 )
+                    {
+                        newI.setAttribute('style','color:#fdfd11');
+                    }
+            }
+        }
+    </script>
+    <script type="text/javascript" src="js/modal-image.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

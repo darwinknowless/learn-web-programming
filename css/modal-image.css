@@ -1,0 +1,142 @@
+.modal-target {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.modal-target:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal-image {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-image-content {
+    margin: 50px auto 0;
+    display: block;
+    width: auto;
+    height: 80%;
+    max-width: 1200px;
+    opacity: 1 !important;
+}
+
+/* Caption of Modal Image */
+.modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: 32px;
+}
+
+/* Add Animation */
+.modal-image-content, .modal-caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-atransform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 550px) {
+    .modal-image-content {
+        margin-top: 35%;
+        width: 100%;
+        height: auto;
+    }
+
+    .modal-close {
+        right: 10px;
+        top:  10px;
+    }
+  }
+
+@media only screen and (min-width: 550px) and (max-width: 720px) {
+    .modal-image-content {
+        margin-top: 25%;
+        width: 90%;
+        height: auto;
+    }
+
+    .modal-close {
+        right: 10px;
+        top:  -10px;
+    }
+  }
+
+@media only screen and (min-width: 720px) and (max-width: 960px) {
+    .modal-image-content {
+        width: 90%;
+        height: auto;
+    }
+
+    .modal-close {
+        right: 10px;
+        top:  -10px;
+    }
+  }
+
+@media only screen and (min-width: 720px) and (max-width: 860px) {
+    .modal-image-content {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1080px) {
+    .modal-image-content {
+        margin-top: 5%;
+        width: auto;
+        height: 75%;
+    }
+
+    .modal-close {
+        right: 10px;
+        top:  0px;
+    }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1280px) {
+    .modal-close {
+        right: 20px;
+        top:  0px;
+    }
+}
